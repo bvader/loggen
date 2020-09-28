@@ -1,5 +1,5 @@
 
-# scheduler
+# loggen
 
 A simple Spring Boot non-interactive application to generate logs 
 
