@@ -1,13 +1,9 @@
 ---
-applications:
-<<<<<<< HEAD
-- name: log-gen
-=======
-- name: scheduler-1s
->>>>>>> 3a35f5c6f4bca04f8ce103704e6a83483bfdae4f
-  memory: 1G
-  path: ./target/log-gen-0.0.1-SNAPSHOT.jar
-  buildpacks:
-    - https://github.com/cloudfoundry/java-buildpack.git
-  no-route: true
-  health-check-type: process
+  applications:
+  - name: log-gen
+    memory: 1G
+    path: ./target/log-gen-0.0.1-SNAPSHOT.jar
+    buildpacks:
+      - https://github.com/cloudfoundry/java-buildpack.git
+    no-route: true
+    health-check-type: process
