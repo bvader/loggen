@@ -13,8 +13,8 @@ import org.springframework.stereotype.Component;
 @SpringBootApplication
 public class LogGenApplication {
 
-	private static final int NUM_LOGS = Integer.getInteger("num_logs", 50);
-	private static final int NUM_MS = Integer.getInteger("num_ms", 20);
+	private static final int NUM_LOGS = Integer.getInteger("num_logs", 20);
+	private static final int NUM_MS = Integer.getInteger("num_ms", 10);
 
 	private static final Logger log = LoggerFactory.getLogger(LogGenApplication.class);
 	private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss.SSS");

@@ -2,8 +2,11 @@
   applications:
   - name: log-gen
     memory: 1G
+    instances: 1
     path: ./target/log-gen-0.0.1-SNAPSHOT.jar
     buildpacks:
       - https://github.com/cloudfoundry/java-buildpack.git
     no-route: true
     health-check-type: process
+    env:
+     JAVA_OPTS: -Dnum_logs=20 -Dnum_ms=10 
